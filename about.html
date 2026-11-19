@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About &amp; Hours | The Daily Grind Campus Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">&#9749;</span>
+        <span>The Daily Grind</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html" class="active" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="nav-cta">Join the club</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Our Story &amp; Campus Hours</h1>
+        <p>Run by Information Technology students, The Daily Grind provides a cozy space to relax, study, and enjoy great coffee.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container card-grid">
+        <article class="card">
+          <h2>Built by Students, for Students &amp; Faculty</h2>
+          <p>The Daily Grind was founded by passionate students who wanted to create a welcoming environment for their peers. Our mission is to provide a comfortable space where students, faculty, and staff can gather, connect, and enjoy quality coffee and light refreshments.</p>
+        </article>
+
+        <article class="card">
+          <h2>Campus Hours</h2>
+          <h3>Monday – Friday</h3>
+          <p>7:00 AM – 9:00 PM (Extended until 11:00 PM during finals week).</p>
+          <h3>Saturday</h3>
+          <p>8:00 AM – 5:00 PM (Closed Sundays &amp; Campus Holidays).</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 The Daily Grind | Adamson Campus Cafe</p>
+
+      <div class="footer-audio">
+        <div class="eq-bars" id="audio-eq" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span id="audio-caption">Café Study Mix:</span>
+        <audio id="bg-audio" controls autoplay loop aria-describedby="audio-caption">
+            <source src="media/Ambience.mp3" type="audio/mpeg">
+            Your browser does not support the HTML5 audio element.
+        </audio>
+      </div>
+
+      <p><a href="index.html">Back to Home</a></p>
+    </div>
+  </footer>
+
+  <div id="popup-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <span id="modal-badge" class="modal-pill">STUDENT VIP PASS</span>
+      <h2 id="modal-title">15% Off Every Study Session</h2>
+      <p id="modal-body">Show your valid campus ID at the counter for 15% off espresso drinks and pastries.</p>
+      <button type="button" id="modal-close" class="btn btn-primary">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

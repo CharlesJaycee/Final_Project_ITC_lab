@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Grind | Adamson Campus Café</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">&#9749;</span>
+        <span>The Daily Grind</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="nav-cta">Join the club</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-container">
+        <ul class="micro-links" aria-label="Quick highlights">
+          <li>&rarr; Morning roasts</li>
+          <li>&rarr; Study booths</li>
+          <li>&rarr; Student perks</li>
+        </ul>
+
+        <div class="hero-title-wrap">
+          <h1>
+            Brew something slow,<br>
+            <span class="sparkle-badge" aria-hidden="true">&#10022;</span>
+            one cup a day.
+          </h1>
+          <div class="floating-badge" id="floating-status-badge" aria-hidden="true">OPEN<br>7 AM</div>
+        </div>
+
+        <p class="hero-subtitle">
+          Roasted locally, brewed to order, and built for late study sessions.<br>
+          Right beside the main campus library every morning.
+        </p>
+
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-primary">Explore menu</a>
+          <a href="about.html" class="btn btn-secondary">How it works</a>
+        </div>
+      </div>
+
+      <div class="container showcase-wrapper">
+        <h2 class="sr-only">Live Campus Café Highlights</h2>
+        <div class="showcase-deck">
+          <article class="deck-card deck-card-light tilt-left">
+            <div class="deck-card-header">
+              <span class="mini-icon" aria-hidden="true">&#9733;</span>
+              <h3>Popular drinks</h3>
+            </div>
+
+            <ul class="metric-list">
+              <li>
+                <span class="metric-name">Caramel Oat</span>
+                <span class="bar-track"><span class="bar-fill" style="width: 92%;"></span></span>
+                <span class="metric-val">92</span>
+              </li>
+              <li>
+                <span class="metric-name">Cold Brew</span>
+                <span class="bar-track"><span class="bar-fill" style="width: 89%;"></span></span>
+                <span class="metric-val">89</span>
+              </li>
+              <li>
+                <span class="metric-name">Matcha Latte</span>
+                <span class="bar-track"><span class="bar-fill" style="width: 87%;"></span></span>
+                <span class="metric-val">87</span>
+              </li>
+              <li>
+                <span class="metric-name">Spanish Latte</span>
+                <span class="bar-track"><span class="bar-fill" style="width: 76%;"></span></span>
+                <span class="metric-val">76</span>
+              </li>
+              <li>
+                <span class="metric-name">House Drip</span>
+                <span class="bar-track"><span class="bar-fill" style="width: 61%;"></span></span>
+                <span class="metric-val">61</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="deck-card deck-card-purple">
+            <div class="purple-card-top">
+              <span class="live-status-pill" id="live-status-pill">OPEN NOW</span>
+              <h3>Seats open right now</h3>
+            </div>
+            <div class="gauge-wrap">
+              <svg viewBox="0 0 200 115" class="gauge-svg" aria-hidden="true">
+                <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="14" stroke-linecap="round" />
+                <path d="M 20 100 A 80 80 0 0 1 142 32" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" />
+              </svg>
+              <div class="gauge-number" id="seat-counter" data-target="57">57</div>
+            </div>
+            <p class="gauge-caption">Quiet study tables with outlets</p>
+          </article>
+
+          <article class="deck-card deck-card-light tilt-right">
+            <div class="deck-card-header spread">
+              <div>
+                <span class="mini-icon" aria-hidden="true">&#9201;</span>
+                <h3>Study streak</h3>
+              </div>
+              <span class="muted-tag">12 weeks</span>
+            </div>
+
+            <svg viewBox="0 0 240 90" class="sparkline-svg" role="img" aria-label="Line graph showing steady student café visits over 12 weeks">
+              <polyline
+                fill="none"
+                stroke="#7c4dff"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                points="10,75 45,62 80,68 115,48 150,55 185,36 225,44"
+              />
+            </svg>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-showcase section-padding">
+      <div class="container">
+        <h2>Inside the Study Lounge</h2>
+        <div class="media-figure-grid">
+          <figure class="featured-figure">
+            <img src="images/featured-coffee.jpg" alt="Students studying with laptops and iced coffee inside The Daily Grind campus cafe">
+            <figcaption>Morning rush at The Daily Grind—open daily from 7:00 AM for early classes.</figcaption>
+          </figure>
+
+          <article class="card">
+            <h3>Built for Late-Night Review</h3>
+            <p>Every study booth is equipped with dual USB-C outlets, warm desk lighting, and high-speed campus Wi-Fi so your group can focus without hunting for wall plugs.</p>
+            <p>Present your Adamson student ID at the counter any time of day for 15% off brewed coffee, espresso drinks, and fresh morning pastries.</p>
+            <a href="menu.html" class="btn btn-secondary">See Today's Menu</a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 The Daily Grind | Adamson Campus Cafe</p>
+
+      <div class="footer-audio">
+        <div class="eq-bars" id="audio-eq" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span id="audio-caption">Café Study Mix:</span>
+        <audio id="bg-audio" controls autoplay loop aria-describedby="audio-caption">
+            <source src="media/Ambience.mp3" type="audio/mpeg">
+            Your browser does not support the HTML5 audio element.
+        </audio>
+      </div>
+
+      <p><a href="contact.html">Reserve a Table</a></p>
+    </div>
+  </footer>
+
+  <div id="popup-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <span id="modal-badge" class="modal-pill">STUDENT VIP PASS</span>
+      <h2 id="modal-title">15% Off Every Study Session</h2>
+      <p id="modal-body">Show your valid campus ID at the counter for 15% off espresso drinks and pastries.</p>
+      <button type="button" id="modal-close" class="btn btn-primary">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

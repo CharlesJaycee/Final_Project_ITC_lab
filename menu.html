@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | The Daily Grind | Adamson Campus Cafe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="brand">
+        <span class="brand-icon" aria-hidden="true">&#9749;</span>
+        <span>The Daily Grind</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active" aria-current="page">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="nav-cta">Join the club</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Cafe Menu &amp; Combos</h1>
+        <p>Handcrafted drinks and fresh bakes made to keep you energized through lab hours.</p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="menu-header-bar">
+          <h2>Signature Drinks &amp; Bakery</h2>
+          <div class="menu-filters" role="group" aria-label="Filter menu items">
+            <button type="button" class="filter-btn active" data-filter="all">All Items</button>
+            <button type="button" class="filter-btn" data-filter="iced">Iced Drinks</button>
+            <button type="button" class="filter-btn" data-filter="hot">Hot Coffee</button>
+            <button type="button" class="filter-btn" data-filter="pastry">Pastries</button>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <article class="card menu-item" data-category="iced hot">
+            <figure class="card-figure">
+              <img src="images/Ice_caramel.jpeg" alt="Tall glass of iced caramel macchiato layered with espresso, milk, and caramel drizzle">
+              <figcaption>Barista Favorite — Served hot or iced</figcaption>
+            </figure>
+            <h3>Caramel Macchiato — ₱120</h3>
+            <p>Espresso layered with steamed milk and vanilla syrup, topped with rich caramel drizzle.</p>
+            <button type="button" class="btn btn-secondary btn-sm preorder-btn" data-item="Caramel Macchiato (₱120)">Pre-Order Item</button>
+          </article>
+
+          <article class="card menu-item" data-category="pastry">
+            <figure class="card-figure">
+              <img src="images/croissant.jpeg" alt="Freshly baked golden flaky butter croissant on a serving plate">
+              <figcaption>Baked fresh every morning at 6:30 AM</figcaption>
+            </figure>
+            <h3>Butter Croissant — ₱80</h3>
+            <p>Flaky, buttery croissant made with premium butter, ideal for early morning classes or study breaks.</p>
+            <button type="button" class="btn btn-secondary btn-sm preorder-btn" data-item="Butter Croissant (₱80)">Pre-Order Item</button>
+          </article>
+
+          <article class="card menu-item" data-category="hot iced">
+            <figure class="card-figure">
+              <img src="images/CaffeAmericano.jpeg" alt="Ceramic mug of freshly brewed hot Caffe Americano">
+              <figcaption>Classic Coffee — Served hot or iced</figcaption>
+            </figure>
+            <h3>Americano — ₱100</h3>
+            <p>Rich double-shot espresso diluted with hot water for a bold, clean coffee flavor.</p>
+            <button type="button" class="btn btn-secondary btn-sm preorder-btn" data-item="Americano (₱100)">Pre-Order Item</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrapper">
+      <p>&copy; 2026 The Daily Grind | Adamson Campus Cafe</p>
+
+      <div class="footer-audio">
+        <div class="eq-bars" id="audio-eq" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+        <span id="audio-caption">Café Study Mix:</span>
+        <audio id="bg-audio" controls autoplay loop aria-describedby="audio-caption">
+          <source src="media/Ambience.mp3" type="audio/mpeg">
+          Your browser does not support the HTML5 audio element.
+        </audio>
+      </div>
+
+      <p><a href="contact.html">Order for Club Meeting</a></p>
+    </div>
+  </footer>
+
+  <div id="popup-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-box">
+      <span id="modal-badge" class="modal-pill">STUDENT VIP PASS</span>
+      <h2 id="modal-title">15% Off Every Study Session</h2>
+      <p id="modal-body">Show your valid campus ID at the counter for 15% off espresso drinks and pastries.</p>
+      <button type="button" id="modal-close" class="btn btn-primary">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
