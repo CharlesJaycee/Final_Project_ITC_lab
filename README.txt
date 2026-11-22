@@ -1,8 +1,9 @@
 PROJECT THEME: Theme 1 — Campus Café (The Daily Grind | Adamson Campus Café)
-SUBMISSION TYPE: Individual Project
+SUBMISSION TYPE: Group Project
 
 MEMBER NAME & ROLE:
 - Charles Jaycee L. Grico — Sole Developer & Designer (HTML5, CSS3, JavaScript, Media & Copy)
+- Lhean Arianne C. Acdal - Designer Developer (CSS3)
 
 WHO CODED WHAT:
 - index.html: Coded the semantic HTML5 structure (header, nav, main, section, article, footer), hero layout, 3-card highlight deck, figure with figcaption, and footer audio player with controls.
